@@ -7,9 +7,12 @@ Note also that 0constants-cs.h, 0impactCompoundSolid-water.c and 0two-phaseDOD.h
 Basically, to run in parallel, type these command lines one by one (27 means number of cores used):
 
 qcc -source -D_MPI=1 0impactCompoundSolid-water.c 
+
 mpicc -O2 -Wall -std=c99 -D_MPI=1 _0impactCompoundSolid-water.c -o cs -lm
+
 mpirun -np 27 ./cs
 
 And to run in normal conditions:
 qcc -O2 -Wall 0impactCompoundSolid-water.c -o cs -lm -L$BASILISK/gl -lglutils -lfb_osmesa -lGLU -lOSMesa -lm
+
 ./cs
