@@ -1,4 +1,4 @@
-# PNAS-Compound-drop-code
+# Compound-drop-code
 Numerical codes for compound drop impact
 
 This is the numerical codes (based on the Basilisk open-source software, basilisk.fr) used to produce the numerical results presented in the PNAS paper.
