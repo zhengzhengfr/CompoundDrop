@@ -12,7 +12,7 @@ mpicc -O2 -Wall -std=c99 -D_MPI=1 _0impactCompoundSolid-water.c -o cs -lm
 
 mpirun -np 28 ./cs
 
-And to run in normal conditions:
+And to run in serial:
 
 qcc -O2 -Wall 0impactCompoundSolid-water.c -o cs -lm -L$BASILISK/gl -lglutils -lfb_osmesa -lGLU -lOSMesa -lm
 
